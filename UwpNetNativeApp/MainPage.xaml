@@ -1,0 +1,58 @@
+﻿<!-- Copyright (c) Microsoft Corporation.
+     Licensed under the MIT License. -->
+<Page
+    x:Class="UwpNetNativeApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpNetNativeApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="70"></ColumnDefinition>
+            <ColumnDefinition Width="7*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Source="Assets/LinkBackImage.png" HorizontalAlignment="Center" Width="1000" />
+
+        <TextBlock x:Uid="Greeting" x:Name="Greeting" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,12,0,12" FontSize="24" FontWeight="Bold" Foreground="#FFEC008C" />
+        <Button x:Name="cmdLaunch" Content="View Dice Package in Store" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" Margin="0,12,10,0"
+            VerticalAlignment="Top" FontSize="20" FontWeight="Bold" BorderBrush="#FF00AEEF" Click="CmdLaunch_Click" />
+
+        <TextBlock x:Name="appNameLabel" Text="App:" Grid.Row="2" Grid.Column="1" />
+        <TextBlock x:Name="appNameTextBlock" Grid.Row="2" Grid.Column="2" />
+
+        <TextBlock x:Name="versionLabel" Text="Ver:" Grid.Row="3" Grid.Column="1" />
+        <TextBlock x:Name="versionTextBlock" Grid.Row="3" Grid.Column="2" />
+
+        <TextBlock x:Name="architectureLabel" Text="Arch:" Grid.Row="4" Grid.Column="1" />
+        <TextBlock x:Name="architectureTextBlock" Grid.Row="4" Grid.Column="2" />
+
+        <TextBlock x:Name="languageLabel" Text="Lang:" Grid.Row="5" Grid.Column="1" />
+        <TextBlock x:Name="languageTextBlock" Grid.Row="5" Grid.Column="2" />
+
+        <TextBlock x:Name="packageFamilyNameLabel" Text="PFN:" Grid.Row="6" Grid.Column="1" />
+        <TextBlock x:Name="packageFamilyNameTextBlock" Grid.Row="6" Grid.Column="2" />
+
+        <StackPanel Grid.Row="6" Grid.Column="1"  Grid.ColumnSpan="2">
+            <Button Click="ShowOptionalPackages" Content="Show optional packages" Margin="0,20" />
+            <TextBlock Text="Optional packages:" />
+            <ListBox x:Name="optionalPackagesListBox" Height="150"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
