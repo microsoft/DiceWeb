@@ -20,7 +20,7 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
 
-This repository contians sample projects to generate apps, games and other content for the Microsoft Partner Center.
+This repository contains sample projects to generate apps, games and other content for the Microsoft Partner Center.
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ This repository contians sample projects to generate apps, games and other conte
   - Select the project in the Solution Explorer
   - Select menu Project -> Publish -> Associate app with the store ...
 
-## Runnning the sample
+## Running the sample
 
 - Open the DiceWebSampleApps.sln in Visual Studio
 - Create packages for upload to Partner Center
