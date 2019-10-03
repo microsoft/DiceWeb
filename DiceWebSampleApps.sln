@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UwpNetNativeApp", "UwpNetNa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UwpCppApp", "UwpCppApp\UwpCppApp.vcxproj", "{C1127118-934E-4B73-81AC-4FD8DA7F2C96}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{B8A13E19-4290-496A-B4E8-7C6CA3E7D6F5}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\DiceWebUtils.ps1 = Scripts\DiceWebUtils.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM

@@ -43,7 +43,7 @@ namespace UwpNetNativeApp
             {
                 if (package.IsOptional)
                 {
-                    optionalPackagesListBox.Items.Append(package.Id.FullName);
+                    optionalPackagesListBox.Items.Add(package.Id.FullName);
                 }
             }
         }

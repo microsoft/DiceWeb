@@ -63,10 +63,10 @@
     <None Include="Data\Data.dat">
       <Filter>Data</Filter>
     </None>
+    <None Include="DiceSettings.json" />
+    <None Include="DiceSettings.ps1" />
   </ItemGroup>
   <ItemGroup>
-    <PRIResource Include="Strings\en-us\Resources.resw">
-      <Filter>Strings\en-us</Filter>
-    </PRIResource>
+    <PRIResource Include="Strings\**\Resources.resw" />
   </ItemGroup>
 </Project>
