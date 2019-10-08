@@ -25,22 +25,24 @@ This repository contains sample projects to generate apps, games and other conte
 ## Prerequisites
 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+- [Microsoft Partner Center account](https://partner.microsoft.com/en-us/dashboard/home)
 
 ## Setup
 
-- Open the DiceWebSampleApps.sln in Visual Studio
-- Associate the project with your store account
-  - Select the project in the Solution Explorer
-  - Select menu Project -> Publish -> Associate app with the store ...
+- Open the **DiceWebSampleApps.sln** in Visual Studio
+- Review specific setup steps for each project
+  - [UwpCppApp](UwpCppApp/README.md)
+  - [UwpNetNativeApp](UwpNetNativeApp/README.md)
+  - [UwpAddOn](UwpAddOn/README.md)
 
 ## Running the sample
 
-- Open the DiceWebSampleApps.sln in Visual Studio
-- Create packages for upload to Partner Center
-  - Select the project in the Solution Explorer
-  - Select menu Project -> Publish -> Create app packages ...
-  - Choose "Microsoft Store as {AppName} by {AppPublisher}". Do not choose side-loading
-  - When finished, visit the output location for the packages.
+- Open the **DiceWebSampleApps.sln** in Visual Studio
+- Verify all setup tasks have been completed
+- Review specific steps to run each project
+  - [UwpCppApp](UwpCppApp/README.md)
+  - [UwpNetNativeApp](UwpNetNativeApp/README.md)
+  - [UwpAddOn](UwpAddOn/README.md)
 
 ## Contents
 
@@ -50,6 +52,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
 |-------------------|--------------------------------------------|
 | `UwpCppApp`       | Sample UWP app using C++.                  |
 | `UwpNetNativeApp` | Sample UWP app using CSharp.               |
+| `UwpAddOn`       | Sample UWP AddOn app using C++.            |
 | `.gitignore`      | Define what to ignore at commit time.      |
 | `CHANGELOG.md`    | List of changes to the sample.             |
 | `CONTRIBUTING.md` | Guidelines for contributing to the sample. |

@@ -12,6 +12,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{B8A1
 		Scripts\DiceWebUtils.ps1 = Scripts\DiceWebUtils.ps1
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UwpAddOn", "UwpAddOn\UwpAddOn.vcxproj", "{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0DFFDF7D-B218-46DB-BEF2-4B7AF56A6DB0}"
+	ProjectSection(SolutionItems) = preProject
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
+		LICENSE = LICENSE
+		README.md = README.md
+		SECURITY.md = SECURITY.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -72,6 +82,26 @@ Global
 		{C1127118-934E-4B73-81AC-4FD8DA7F2C96}.Release|x86.ActiveCfg = Release|Win32
 		{C1127118-934E-4B73-81AC-4FD8DA7F2C96}.Release|x86.Build.0 = Release|Win32
 		{C1127118-934E-4B73-81AC-4FD8DA7F2C96}.Release|x86.Deploy.0 = Release|Win32
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Debug|ARM.ActiveCfg = Debug|ARM
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Debug|ARM.Build.0 = Debug|ARM
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Debug|ARM.Deploy.0 = Debug|ARM
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Debug|x64.ActiveCfg = Debug|x64
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Debug|x64.Build.0 = Debug|x64
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Debug|x64.Deploy.0 = Debug|x64
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Debug|x86.Build.0 = Debug|Win32
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Debug|x86.Deploy.0 = Debug|Win32
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Release|ARM.ActiveCfg = Release|ARM
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Release|ARM.Build.0 = Release|ARM
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Release|ARM.Deploy.0 = Release|ARM
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Release|ARM64.ActiveCfg = Release|Win32
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Release|x64.ActiveCfg = Release|x64
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Release|x64.Build.0 = Release|x64
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Release|x64.Deploy.0 = Release|x64
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Release|x86.ActiveCfg = Release|Win32
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Release|x86.Build.0 = Release|Win32
+		{EC04DA50-C53C-45DE-BB5D-D825C9D66D26}.Release|x86.Deploy.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

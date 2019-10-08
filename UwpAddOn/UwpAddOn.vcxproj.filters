@@ -1,31 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Common">
-      <UniqueIdentifier>c1127118-934e-4b73-81ac-4fd8da7f2c96</UniqueIdentifier>
+      <UniqueIdentifier>ec04da50-c53c-45de-bb5d-d825c9d66d26</UniqueIdentifier>
     </Filter>
     <Filter Include="Assets">
-      <UniqueIdentifier>4f123f75-5970-447e-9404-3318d01be47d</UniqueIdentifier>
+      <UniqueIdentifier>a2dc0ccd-093b-42de-a4e3-bc5d3fcdcc2b</UniqueIdentifier>
       <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
-    </Filter>
-    <Filter Include="Data">
-      <UniqueIdentifier>{005ab678-62da-416c-838f-afbb34078040}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Strings">
-      <UniqueIdentifier>{55a56f2b-9228-43c6-b095-42a5570e65ad}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Strings\en-us">
-      <UniqueIdentifier>{48afd412-685f-4c42-ade2-9bb541c24a67}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
     <ClCompile Include="pch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png">
@@ -49,9 +44,6 @@
     <Image Include="Assets\Wide310x150Logo.scale-200.png">
       <Filter>Assets</Filter>
     </Image>
-    <Image Include="Assets\LinkBackImage.png">
-      <Filter>Assets</Filter>
-    </Image>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />
@@ -60,14 +52,9 @@
     <Page Include="MainPage.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\Data.dat">
-      <Filter>Data</Filter>
-    </None>
-    <None Include="DiceSettings.json" />
-    <None Include="DiceSettings.ps1" />
-    <None Include="README.md" />
+    <Xml Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PRIResource Include="Strings\**\Resources.resw" />
+    <None Include="README.md" />
   </ItemGroup>
 </Project>

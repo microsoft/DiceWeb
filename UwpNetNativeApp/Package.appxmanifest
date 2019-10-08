@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="19977THTEST10.samco190901"
-    Publisher="CN=CF761DEB-95B0-405D-AC9A-D6E3B3217D83"
+    Name="PublisherName.UwpNetNativeApp"
+    Publisher="CN=PublisherName"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="9d656e1f-e24f-47df-83c2-68726a2cbf48" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>samco_1909_01</DisplayName>
-    <PublisherDisplayName>THTEST10</PublisherDisplayName>
+    <DisplayName>UwpNetNativeApp</DisplayName>
+    <PublisherDisplayName>PublisherName</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -32,7 +32,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="App1.App">
       <uap:VisualElements
-        DisplayName="samco_1909_01"
+        DisplayName="UwpNetNativeApp"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
         Description="App1"
