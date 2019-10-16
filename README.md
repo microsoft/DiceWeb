@@ -31,6 +31,7 @@ This repository contains sample projects to generate apps, games and other conte
 
 - Open the **DiceWebSampleApps.sln** in Visual Studio
 - Review specific setup steps for each project
+  - [CentennialApp](CentennialApp/README.md)
   - [UwpCppApp](UwpCppApp/README.md)
   - [UwpNetNativeApp](UwpNetNativeApp/README.md)
   - [UwpAddOn](UwpAddOn/README.md)
@@ -40,6 +41,7 @@ This repository contains sample projects to generate apps, games and other conte
 - Open the **DiceWebSampleApps.sln** in Visual Studio
 - Verify all setup tasks have been completed
 - Review specific steps to run each project
+  - [CentennialApp](CentennialApp/README.md)
   - [UwpCppApp](UwpCppApp/README.md)
   - [UwpNetNativeApp](UwpNetNativeApp/README.md)
   - [UwpAddOn](UwpAddOn/README.md)
@@ -50,6 +52,8 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 | File/folder       | Description                                |
 |-------------------|--------------------------------------------|
+| `CentennialApp` | Sample C# Desktop bridge app.                  |
+| `CentennialPackaging` | Packaging project for sample Desktop bridge app. |
 | `UwpCppApp`       | Sample UWP app using C++.                  |
 | `UwpNetNativeApp` | Sample UWP app using CSharp.               |
 | `UwpAddOn`       | Sample UWP AddOn app using C++.            |
