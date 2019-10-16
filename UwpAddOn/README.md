@@ -48,8 +48,12 @@ The UwpAddOn project is a sample app to use as a package for an AddOn for an App
 
 ## <a name="manually-update-store-association"></a>Manually Update Store Association
 Visual Studio does not provide a way to associate your sample app to an AddOn, 
-so you can associate it with any app under the account.  This will but you still need to associate it to an app so the publisher information is all correct.
-After you've finished the store association:
+so you can associate it with any app under the account.  By associating the project with an
+app, you are still getting the benefits of having all the publishing information correctly
+populated for you by Visual Studio. This includes any certificates that might need created 
+or installed to sign your package.
+
+Once the inital association is done, you'll have to perform the following manual steps to correctly configure the AddOn.
 
 - Open **Package.StoreAssociation.xml**
 - Update the ProductReservedInfo section to include the Identity and Reserved Name of your AddOn.
@@ -87,9 +91,9 @@ After you've finished the store association:
   </Dependencies>
 ```
 
-## Licensing
+## License
 
-Read about the [license](../LICENSE) for this project.
+[MIT](../LICENSE)
 
 ## Contributing
 

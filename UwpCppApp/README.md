@@ -48,9 +48,9 @@ The UwpCppApp project is a sample C++ app that can be uploaded to Microsoft Part
   - Choose "Microsoft Store as \{AppName\} by \{AppPublisher\}". Do not choose side-loading
   - When finished, visit the output location for the packages.
 
-## Licensing
+## License
 
-Read about the [license](../LICENSE) for this project.
+[MIT](../LICENSE)
 
 ## Contributing
 

@@ -8,7 +8,8 @@ function InflateDataFile([string] $filePath, [float] $sizeInMB) {
     }
 
     if ($sizeInMB -lt 0) {
-        throw [ArgumentException] "$sizeInMB cannot be smaller than 0"
+        Write-Output "sizeInMB ($sizeInMB) is less than zero. Resetting to zero."
+        $sizeInMB = 0
     }
 
     $fullPath = [System.IO.Path]::GetFullPath($filePath)
@@ -47,21 +48,38 @@ function InflateDataFile([string] $filePath, [float] $sizeInMB) {
 
 function CreateLanguageResources([string] $stringsPath, $languages, [string] $defaultLang = "en-us") {
     # assume there will be a resource for en-us
-	$defaultPath = [System.IO.Path]::GetFullPath((Join-Path (Join-Path $stringsPath $defaultLang) "Resources.resw"))
+    $defaultPath = [System.IO.Path]::GetFullPath((Join-Path (Join-Path $stringsPath $defaultLang) "Resources.resw"))
     if (-not (Test-Path $defaultPath)) {
         throw "Cannot find $defaultPath"
     }
 
     # create a copy of the default resource for other languages
-	$defaultContent = Get-Content -Raw -Path $defaultPath
-	foreach ($lang in $languages) {
+    $defaultContent = Get-Content -Raw -Path $defaultPath
+    foreach ($lang in $languages) {
         if ($lang -ine $defaultLang) {
-		    $langContent = $defaultContent.Replace($defaultLang, $lang);
-		    $langPath = Join-Path $stringsPath $lang
-		    mkdir $langPath -Force | Out-Null
-		    Set-Content -Value $langContent -Path (Join-Path $langPath "Resources.resw") -Force
+            $langContent = $defaultContent.Replace($defaultLang, $lang);
+            $langPath = Join-Path $stringsPath $lang
+            mkdir $langPath -Force | Out-Null
+            Set-Content -Value $langContent -Path (Join-Path $langPath "Resources.resw") -Force
         }
-	}
+    }
+}
+
+function CreateLanguageResourcesForBridge([string] $stringsPath, $languages, [string] $defaultLang = "en-us") {
+    # assume there will be a default resource
+    $defaultPath = [System.IO.Path]::GetFullPath((Join-Path $stringsPath "Resources.resx"))
+    if (-not (Test-Path $defaultPath)) {
+        throw "Cannot find $defaultPath"
+    }
+
+    # create a copy of the default resource for other languages
+    $defaultContent = Get-Content -Raw -Path $defaultPath
+    foreach ($lang in $languages) {
+        if ($lang -ine $defaultLang) {
+            $langContent = $defaultContent.Replace($defaultLang, $lang);
+            Set-Content -Value $langContent -Path (Join-Path $stringsPath "Resources.$($lang).resx") -Force
+        }
+    }
 }
 
 

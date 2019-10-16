@@ -1,0 +1,50 @@
+﻿<!-- Copyright (c) Microsoft Corporation.
+     Licensed under the MIT License. -->
+<Window x:Class="CentennialApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CentennialApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="750">
+
+    <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="7*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Source="Assets/LinkBackImage.png" HorizontalAlignment="Center" Width="1000" />
+
+        <TextBlock x:Name="Greeting" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,12,0,12" FontSize="24" FontWeight="Bold" Foreground="#FFEC008C" />
+        <Button x:Name="cmdLaunch" Content="View Dice Package" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" Margin="0,12,10,0"
+                VerticalAlignment="Top" FontSize="20" FontWeight="Bold" BorderBrush="#FF00AEEF"
+                Click="cmdLaunch_Click" />
+
+        <TextBlock x:Name="appNameLabel" Text="App:" Grid.Row="2" Grid.Column="1" FontWeight="Bold" FontSize="20" />
+        <TextBlock x:Name="appNameTextBlock" Grid.Row="2" Grid.Column="2" FontSize="20" />
+
+        <TextBlock x:Name="versionLabel" Text="Ver:" Grid.Row="3" Grid.Column="1" FontWeight="Bold" FontSize="20" />
+        <TextBlock x:Name="versionTextBlock" Grid.Row="3" Grid.Column="2" FontSize="20" />
+
+        <TextBlock x:Name="architectureLabel" Text="Arch:" Grid.Row="4" Grid.Column="1" FontWeight="Bold" FontSize="20" />
+        <TextBlock x:Name="architectureTextBlock" Grid.Row="4" Grid.Column="2" FontSize="20" />
+
+        <TextBlock x:Name="languageLabel" Text="Lang:" Grid.Row="5" Grid.Column="1" FontWeight="Bold" FontSize="20" />
+        <TextBlock x:Name="languageTextBlock" Grid.Row="5" Grid.Column="2" FontSize="20" />
+
+    </Grid>
+</Window>

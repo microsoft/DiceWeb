@@ -5,11 +5,11 @@ languages:
 products:
 - dotnet
 - windows-uwp
-description: "Sample C# app for use in testing the Microsoft Partner Center."
-urlFragment: "sample-partner-center-apps-uwp-netnative"
+description: "Sample C# desktop bridge app for use in testing the Microsoft Partner Center."
+urlFragment: "sample-partner-center-apps-centennial-desktopbridge"
 ---
 
-# Sample C++ Project for Partner Center
+# Sample Desktop Bridge app for Partner Center
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
@@ -19,7 +19,7 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
 
-The UwpNetNativeApp project is a sample C# app that can be uploaded to Microsoft Partner Center.
+The CentennialPackaging and CentennialApp projects are a sample C# desktop bridge app that can be uploaded to Microsoft Partner Center.
 
 ## Prerequisites
 
@@ -29,12 +29,12 @@ The UwpNetNativeApp project is a sample C# app that can be uploaded to Microsoft
 ## Setup
 
 - Open the **DiceWebSampleApps.sln** in Visual Studio
-- Associate the **UwpNetNativeApp** project with your store account
+- Associate the **CentennialPackaging** project with your store account
   - Select the project in the Solution Explorer
   - Select menu Project -> Publish -> Associate app with the store ...
     - Make sure to log in under the account where the package will be uploaded.
     - If the app has not already been created in Partner Center, you can reserve the name first.
-- Configure **DiceSettings.json**
+- In the **CentennialApp** project, configure **DiceSettings.json**
   - TargetPackageSizeInMB - Set to size in MB that you want the final package to be
   - Languages - Add all the languages to be included into the package into this array
 
@@ -43,7 +43,7 @@ The UwpNetNativeApp project is a sample C# app that can be uploaded to Microsoft
 - Open the **DiceWebSampleApps.sln** in Visual Studio
 - Complete the Setup
 - Create packages for upload to Partner Center
-  - Select the **UwpNetNativeApp** project in the Solution Explorer
+  - Select the **CentennialPackaging** project in the Solution Explorer
   - Select menu Project -> Publish -> Create app packages ...
   - Choose "Microsoft Store as \{AppName\} by \{AppPublisher\}". Do not choose side-loading
   - When finished, visit the output location for the packages.
