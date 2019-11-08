@@ -9,7 +9,7 @@ description: "Sample C# app for use in testing the Microsoft Partner Center."
 urlFragment: "sample-partner-center-apps-uwp-netnative"
 ---
 
-# Sample C++ Project for Partner Center
+# Sample C# Project for Partner Center
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
