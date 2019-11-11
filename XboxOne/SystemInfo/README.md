@@ -13,7 +13,7 @@ This is a copy of XDKSample project SystemInfo from the [Xbox-ATG-Samples](https
 
 It has been modified to allow you to vary the output size and the number of included languages based on a configuration file. This is helpful for producing test content for uploading to Partner Center.
 
-For more information about the orignal sample, see this [Word document](https://github.com/microsoft/Xbox-ATG-Samples/blob/master/XDKSamples/System/SystemInfo/Readme.docx).
+For more information about the original sample, see this [Word document](https://github.com/microsoft/Xbox-ATG-Samples/blob/master/XDKSamples/System/SystemInfo/Readme.docx).
 
 ## Requirements
 * Xbox One Development Kit
@@ -25,9 +25,9 @@ For more information about the orignal sample, see this [Word document](https://
 
 - Open the **DiceWebSampleApps.sln** in Visual Studio
 - Update the /XboxOne/SystemInfo/Package.appxmanifest file with the appropriate store settings.
-  - /Package/Idendity/@Name
-  - /Package/Idendity/@Publisher
-  - /Package/Idendity/@Version
+  - /Package/Identity/@Name
+  - /Package/Identity/@Publisher
+  - /Package/Identity/@Version
   - /Package/Properties/DisplayName
   - /Package/Properties/PublisherDisplayName
   - /Package/Applications/Application[@Id='App']/VisualElements/@DisplayName

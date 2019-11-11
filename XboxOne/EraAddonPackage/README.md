@@ -13,9 +13,9 @@ This project uses the XboxOne XDK to create an package for a durable good Addon 
 
 - Open the **DiceWebSampleApps.sln** in Visual Studio
 - Update the /XboxOne/EraAddonPackage/Durable1/AppxManifest.xml file with the appropriate store settings.
-  - /Package/Idendity/@Name
-  - /Package/Idendity/@Publisher
-  - /Package/Idendity/@Version
+  - /Package/Identity/@Name
+  - /Package/Identity/@Publisher
+  - /Package/Identity/@Version
   - /Package/Properties/DisplayName
   - /Package/Properties/PublisherDisplayName
   - /Package/Extensions/mx:PackageExtension/mx:ContentPackage/mx:AllowedProduct/@Id

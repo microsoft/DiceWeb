@@ -90,7 +90,7 @@ namespace
         if (mh.Ambient.x == 0 && mh.Ambient.y == 0 && mh.Ambient.z == 0 && mh.Ambient.w == 0
             && mh.Diffuse.x == 0 && mh.Diffuse.y == 0 && mh.Diffuse.z == 0 && mh.Diffuse.w == 0)
         {
-            // SDKMESH material color block is uninitalized; assume defaults
+            // SDKMESH material color block is uninitialized; assume defaults
             info.diffuseColor = XMFLOAT3(1.f, 1.f, 1.f);
             info.alpha = 1.f;
         }

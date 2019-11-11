@@ -36,7 +36,7 @@ The UwpAddOn project is a sample app to use as a package for an AddOn for an App
     - Addons will not be in the list, so pick any app you want.
 - [Manually update the store association](#manually-update-store-association) for your AddOn.
 
-## Runnning the sample
+## Running the sample
 
 - Open the UwpAddOn.vcxproj in Visual Studio
 - Complete the Setup including manual configuration of the store association
@@ -53,7 +53,7 @@ app, you are still getting the benefits of having all the publishing information
 populated for you by Visual Studio. This includes any certificates that might need created 
 or installed to sign your package.
 
-Once the inital association is done, you'll have to perform the following manual steps to correctly configure the AddOn.
+Once the initial association is done, you'll have to perform the following manual steps to correctly configure the AddOn.
 
 - Open **Package.StoreAssociation.xml**
 - Update the ProductReservedInfo section to include the Identity and Reserved Name of your AddOn.

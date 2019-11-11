@@ -38,7 +38,7 @@ The UwpCppApp project is a sample C++ app that can be uploaded to Microsoft Part
   - TargetPackageSizeInMB - Set to size in MB that you want the final package to be
   - Languages - Add all the languages to be included into the package into this array
 
-## Runnning the sample
+## Running the sample
 
 - Open the **DiceWebSampleApps.sln** in Visual Studio
 - Complete the Setup

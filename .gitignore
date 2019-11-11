@@ -328,3 +328,8 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+# XDK output folders
+/XboxOne/EraAddonPackage/out
+/XboxOne/EraPackage/out
+/XboxOne/SystemInfo/Durango

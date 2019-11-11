@@ -38,7 +38,7 @@ The CentennialPackaging and CentennialApp projects are a sample C# desktop bridg
   - TargetPackageSizeInMB - Set to size in MB that you want the final package to be
   - Languages - Add all the languages to be included into the package into this array
 
-## Runnning the sample
+## Running the sample
 
 - Open the **DiceWebSampleApps.sln** in Visual Studio
 - Complete the Setup
