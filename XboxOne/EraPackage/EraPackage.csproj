@@ -20,4 +20,7 @@
   </Target>
   <Target Name="Rebuild" DependsOnTargets="Build">
   </Target>
+  <Target Name="Clean">
+    <Exec Command="del .\out\*.* /f /s /q" IgnoreExitCode="True" />
+  </Target>
 </Project>
