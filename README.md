@@ -6,6 +6,7 @@ languages:
 products:
 - dotnet
 - windows-uwp
+- xbox
 description: "Sample apps, games and other content for use in testing the Microsoft Partner Center."
 urlFragment: "sample-partner-center-apps"
 ---
@@ -22,15 +23,25 @@ Taxonomies for products and languages: https://review.docs.microsoft.com/new-hop
 
 This repository contains sample projects to generate apps, games and other content for the Microsoft Partner Center.
 
-## Prerequisites
+## Requirements
 
+### UWP apps
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 - [Microsoft Partner Center account](https://partner.microsoft.com/en-us/dashboard/home)
+
+### XDK apps
+* [Xbox One Development Kit](https://aka.ms/gdk)
+* [Xbox One XDK](https://aka.ms/gdk) (specific version requirements covered in each sample's readme)
+* [Visual Studio 2015 or Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
+
+
 
 ## Setup
 
 - Open the **DiceWebSampleApps.sln** in Visual Studio
 - Review specific setup steps for each project
+  - [EraPackage](XboxOne/EraPackage/README.md)
+  - [EraAddOnPackage](XboxOne/EraAddOnPackage/README.md)
   - [CentennialApp](CentennialApp/README.md)
   - [UwpCppApp](UwpCppApp/README.md)
   - [UwpNetNativeApp](UwpNetNativeApp/README.md)
@@ -41,6 +52,8 @@ This repository contains sample projects to generate apps, games and other conte
 - Open the **DiceWebSampleApps.sln** in Visual Studio
 - Verify all setup tasks have been completed
 - Review specific steps to run each project
+  - [EraPackage](XboxOne/EraPackage/README.md)
+  - [EraAddOnPackage](XboxOne/EraAddOnPackage/README.md)
   - [CentennialApp](CentennialApp/README.md)
   - [UwpCppApp](UwpCppApp/README.md)
   - [UwpNetNativeApp](UwpNetNativeApp/README.md)
@@ -62,6 +75,8 @@ Outline the file contents of the repository. It helps users navigate the codebas
 | `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
 | `README.md`       | This README file.                          |
 | `LICENSE`         | The license for the sample.                |
+| XboxOne/EraPackage | Sample package for XboxOne game. |
+| XboxOne/EraAddOnPackage | Sample package for XboxOne durable with packages addon. |
 
 ## Contributing
 

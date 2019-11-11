@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{058B8927-2BAE-4144-A5E4-5B9173DCAE58}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="chunks.xml" />
+    <None Include="DiceCreateXvc.ps1" />
+    <None Include="DiceSettings.json" />
+    <None Include="DiceSettings.ps1" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Durable1\Alignment\Update.alignmentchunk" />
+    <None Include="Durable1\Data\Data.dat" />
+    <None Include="Durable1\Media\Textures\Background.dds" />
+    <None Include="Durable1\PackageImages\ATGLiveLogo.png" />
+    <None Include="Durable1\PackageImages\ATGSmallLogo.png" />
+    <None Include="Durable1\PackageImages\ATGSplashScreen.png" />
+    <None Include="Durable1\PackageImages\ATGStoreLogo.png" />
+    <None Include="Durable1\AppxManifest.xml" />
+  </ItemGroup>
+  <Target Name="Build">
+    <Message Text="Calling DiceSettings.ps1 to apply settings to the Durable1 folder" Importance="high" />
+    <Exec Command="powershell.exe -NonInteractive -ExecutionPolicy Unrestricted -File .\DiceSettings.ps1" IgnoreExitCode="True" />
+    <Message Text="Calling DiceCreateXvc.ps1 to pack the Durable1 folder into an XVC file" Importance="high" />
+    <Exec Command="powershell.exe -NonInteractive -ExecutionPolicy Unrestricted -File .\DiceCreateXvc.ps1" IgnoreExitCode="True" />
+  </Target>
+  <Target Name="Rebuild" DependsOnTargets="Build">
+  </Target>
+</Project>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{414A4F45-6CBF-419A-871E-1125F88E57F3}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SystemInfo\SystemInfo.vcxproj">
+      <Project>{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}</Project>
+      <Name>SystemInfo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="chunks.xml" />
+    <None Include="DiceCreateXvc.ps1" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <Target Name="Build">
+    <Message Text="Calling DiceCreateXvc.ps1 to pack the SystemInfo project into an XVC file" Importance="high" />
+    <Exec Command="powershell.exe -NonInteractive -ExecutionPolicy Unrestricted -File .\DiceCreateXvc.ps1" IgnoreExitCode="True" />
+  </Target>
+  <Target Name="Rebuild" DependsOnTargets="Build">
+  </Target>
+</Project>

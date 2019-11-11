@@ -1,0 +1,13 @@
+<Package>
+  <Chunk Id="Registration">
+    <FileGroup DestinationPath="\" SourcePath="." Include="AppxManifest.xml" />
+    <FileGroup DestinationPath="\Assets" SourcePath=".\Assets" Include="*.*"/>
+    <FileGroup DestinationPath="\Data" SourcePath=".\Data" Include="*.*"/>
+  </Chunk>
+  <Chunk Id="1000" Marker="Launch">
+    <FileGroup DestinationPath="\" SourcePath="." Include="*.*"/>
+  </Chunk>
+  <Chunk Id="1073741823">
+    <FileGroup DestinationPath="\Alignment" SourcePath=".\Alignment" Include="Update.alignmentchunk"/>
+  </Chunk>
+</Package>

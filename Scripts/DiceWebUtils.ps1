@@ -82,4 +82,37 @@ function CreateLanguageResourcesForBridge([string] $stringsPath, $languages, [st
     }
 }
 
+function UpdateManifestLanguages([string] $manifestPath, $languages) {
+    # load the AppxManifest.xml
+    $manifestXml = [Xml](Get-Content $manifestPath -Raw)
 
+    # Clear all of the existing language resources
+    $resourcesElement = $manifestXml.Package.Resources
+    $resourcesElement.RemoveAll()
+
+    # Add each langauge to the resources node
+    foreach ($lang in $languages) {
+        $newResource = $manifestXml.CreateElement("Resource", $manifestXml.DocumentElement.NamespaceURI)
+        $newAttribute = $manifestXml.CreateAttribute("Language")
+        $newAttribute.Value = $lang
+        $newResource.Attributes.Append($newAttribute) | Out-Null
+        $resourcesElement.AppendChild($newResource) | Out-Null
+    }
+
+    # save the manifest
+    $manifestXml.Save($manifestPath)
+}
+
+function GetDurangoXdkPath() {
+    $xdkRoot = Get-ItemPropertyValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" -Name "DurangoXDK" -ErrorAction SilentlyContinue
+
+    if (($xdkRoot -eq $null) -or -not (Test-Path $xdkRoot)) {
+         throw [InvalidOperationException] "Registry key for XDK not found"
+    }
+
+    return Join-Path $xdkRoot "bin"
+}
+
+function GetXdkMakePkgPath() {
+    return Join-Path (GetDurangoXdkPath) "makepkg.exe"
+}

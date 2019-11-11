@@ -1,0 +1,16 @@
+﻿<Package>
+    <Chunk Id="Registration">
+        <FileGroup DestinationPath="\" SourcePath="." Include="AppxManifest.xml" />
+        <FileGroup DestinationPath="\PackageImages" SourcePath=".\PackageImages" Include="ATGLiveLogo.png"/>
+        <FileGroup DestinationPath="\PackageImages" SourcePath=".\PackageImages" Include="ATGSmallLogo.png"/>
+        <FileGroup DestinationPath="\PackageImages" SourcePath=".\PackageImages" Include="ATGSplashScreen.png"/>
+        <FileGroup DestinationPath="\PackageImages" SourcePath=".\PackageImages" Include="ATGStoreLogo.png"/>
+        <FileGroup DestinationPath="\Data" SourcePath=".\Data" Include="Data.dat"/>
+    </Chunk>
+    <Chunk Id="1000">
+        <FileGroup DestinationPath="\Media\Textures" SourcePath=".\Media\Textures" Include="*.*"/>
+    </Chunk>
+    <Chunk Id="1073741823" Marker="Launch">
+        <FileGroup DestinationPath="\Alignment" SourcePath=".\Alignment" Include="Update.alignmentchunk"/>
+    </Chunk>
+</Package>
