@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UwpNetNativeApp", "UwpNetNativeApp\UwpNetNativeApp.csproj", "{FF5481D8-B2F6-4F35-80EE-C0CE9AD931DC}"
 EndProject
@@ -26,35 +26,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentennialApp", "CentennialApp\CentennialApp.csproj", "{49A5B00F-3E0F-43DF-A3F3-EA6DAF6B425C}"
 EndProject
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "CentennialPackaging", "CentennialPackaging\CentennialPackaging.wapproj", "{78E1149D-FEBC-422E-98BD-74E2215CA35D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XboxOne", "XboxOne", "{669FF5A6-10C2-4310-A94B-F04E92710605}"
-	ProjectSection(SolutionItems) = preProject
-		XboxOne\XDK_Installation_Tips.md = XboxOne\XDK_Installation_Tips.md
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SystemInfo", "XboxOne\SystemInfo\SystemInfo.vcxproj", "{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kits", "Kits", "{64F1DD81-2F44-4EA3-A49D-4EC62FF61A10}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectXTK_XboxOneXDK_2015", "XboxOne\Kits\DirectXTK\DirectXTK_XboxOneXDK_2015.vcxproj", "{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EraPackage", "XboxOne\EraPackage\EraPackage.csproj", "{414A4F45-6CBF-419A-871E-1125F88E57F3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Media", "Media", "{0BEBF783-4A12-481E-B129-BE516557B56D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fonts", "Fonts", "{23E6E5A4-5191-46D6-8919-8BD2101CC6AD}"
-	ProjectSection(SolutionItems) = preProject
-		XboxOne\Media\Fonts\SegoeUI_18.spritefont = XboxOne\Media\Fonts\SegoeUI_18.spritefont
-		XboxOne\Media\Fonts\SegoeUI_36.spritefont = XboxOne\Media\Fonts\SegoeUI_36.spritefont
-		XboxOne\Media\Fonts\XboxOneControllerLegendSmall.spritefont = XboxOne\Media\Fonts\XboxOneControllerLegendSmall.spritefont
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Textures", "Textures", "{38C0570C-6A10-4903-8E36-32732C78E7FA}"
-	ProjectSection(SolutionItems) = preProject
-		XboxOne\Media\Textures\ATGSampleBackground.DDS = XboxOne\Media\Textures\ATGSampleBackground.DDS
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EraAddOnPackage", "XboxOne\EraAddonPackage\EraAddOnPackage.csproj", "{058B8927-2BAE-4144-A5E4-5B9173DCAE58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -285,106 +256,9 @@ Global
 		{78E1149D-FEBC-422E-98BD-74E2215CA35D}.Release|x86.ActiveCfg = Release|x86
 		{78E1149D-FEBC-422E-98BD-74E2215CA35D}.Release|x86.Build.0 = Release|x86
 		{78E1149D-FEBC-422E-98BD-74E2215CA35D}.Release|x86.Deploy.0 = Release|x86
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Debug|Any CPU.ActiveCfg = Debug|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Debug|ARM.ActiveCfg = Debug|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Debug|ARM64.ActiveCfg = Debug|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Debug|Durango.ActiveCfg = Debug|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Debug|Durango.Build.0 = Debug|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Debug|Durango.Deploy.0 = Debug|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Debug|x64.ActiveCfg = Debug|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Debug|x86.ActiveCfg = Debug|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Profile|Any CPU.ActiveCfg = Profile|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Profile|ARM.ActiveCfg = Profile|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Profile|ARM64.ActiveCfg = Profile|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Profile|Durango.ActiveCfg = Profile|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Profile|Durango.Build.0 = Profile|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Profile|Durango.Deploy.0 = Profile|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Profile|x64.ActiveCfg = Profile|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Profile|x86.ActiveCfg = Profile|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Release|Any CPU.ActiveCfg = Release|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Release|ARM.ActiveCfg = Release|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Release|ARM64.ActiveCfg = Release|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Release|Durango.ActiveCfg = Release|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Release|Durango.Build.0 = Release|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Release|Durango.Deploy.0 = Release|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Release|x64.ActiveCfg = Release|Durango
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7}.Release|x86.ActiveCfg = Release|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Debug|Any CPU.ActiveCfg = Debug|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Debug|ARM.ActiveCfg = Debug|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Debug|ARM64.ActiveCfg = Debug|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Debug|Durango.ActiveCfg = Debug|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Debug|Durango.Build.0 = Debug|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Debug|x64.ActiveCfg = Debug|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Debug|x86.ActiveCfg = Debug|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Profile|Any CPU.ActiveCfg = Profile|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Profile|ARM.ActiveCfg = Profile|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Profile|ARM64.ActiveCfg = Profile|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Profile|Durango.ActiveCfg = Profile|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Profile|Durango.Build.0 = Profile|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Profile|x64.ActiveCfg = Profile|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Profile|x86.ActiveCfg = Profile|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Release|Any CPU.ActiveCfg = Release|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Release|ARM.ActiveCfg = Release|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Release|ARM64.ActiveCfg = Release|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Release|Durango.ActiveCfg = Release|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Release|Durango.Build.0 = Release|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Release|x64.ActiveCfg = Release|Durango
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2}.Release|x86.ActiveCfg = Release|Durango
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Debug|ARM.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Debug|ARM64.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Debug|Durango.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Debug|Durango.Build.0 = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Debug|x64.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Debug|x86.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Profile|Any CPU.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Profile|ARM.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Profile|ARM64.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Profile|Durango.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Profile|Durango.Build.0 = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Profile|x64.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Profile|x86.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Release|Any CPU.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Release|ARM.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Release|ARM64.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Release|Durango.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Release|Durango.Build.0 = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Release|x64.ActiveCfg = Debug|x86
-		{414A4F45-6CBF-419A-871E-1125F88E57F3}.Release|x86.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Debug|ARM.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Debug|ARM64.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Debug|Durango.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Debug|Durango.Build.0 = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Debug|x64.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Debug|x86.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Profile|Any CPU.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Profile|ARM.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Profile|ARM64.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Profile|Durango.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Profile|Durango.Build.0 = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Profile|x64.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Profile|x86.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Release|Any CPU.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Release|ARM.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Release|ARM64.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Release|Durango.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Release|Durango.Build.0 = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Release|x64.ActiveCfg = Debug|x86
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58}.Release|x86.ActiveCfg = Debug|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{A5254D60-5AF4-4B6B-83F1-E38DC0649AD7} = {669FF5A6-10C2-4310-A94B-F04E92710605}
-		{64F1DD81-2F44-4EA3-A49D-4EC62FF61A10} = {669FF5A6-10C2-4310-A94B-F04E92710605}
-		{4FDFDCCD-EE2E-415C-B458-1E8FDB0D85F2} = {64F1DD81-2F44-4EA3-A49D-4EC62FF61A10}
-		{414A4F45-6CBF-419A-871E-1125F88E57F3} = {669FF5A6-10C2-4310-A94B-F04E92710605}
-		{0BEBF783-4A12-481E-B129-BE516557B56D} = {669FF5A6-10C2-4310-A94B-F04E92710605}
-		{23E6E5A4-5191-46D6-8919-8BD2101CC6AD} = {0BEBF783-4A12-481E-B129-BE516557B56D}
-		{38C0570C-6A10-4903-8E36-32732C78E7FA} = {0BEBF783-4A12-481E-B129-BE516557B56D}
-		{058B8927-2BAE-4144-A5E4-5B9173DCAE58} = {669FF5A6-10C2-4310-A94B-F04E92710605}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6ADAB6B3-F01B-464A-8BD8-B5AF7DE43202}

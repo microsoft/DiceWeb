@@ -25,14 +25,13 @@ This repository contains sample projects to generate apps, games and other conte
 
 ## Requirements
 
-### UWP apps
+#### UWP apps
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 - [Microsoft Partner Center account](https://partner.microsoft.com/en-us/dashboard/home)
 
-### XDK apps
-* [Xbox One Development Kit](https://aka.ms/gdk)
-* [Xbox One XDK](https://aka.ms/gdk) (specific version requirements covered in each sample's readme)
-* [Visual Studio 2015 or Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
+#### XDK apps
+* [Visual Studio 2015 or Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) (higher versions not supported)
+* [Xbox One XDK](https://www.microsoft.com/en-us/software-download/devcenter) ([installation tips](XboxOne/XDK_Installation_Tips.md))
 
 
 
