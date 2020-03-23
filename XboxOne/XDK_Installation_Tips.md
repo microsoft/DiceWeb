@@ -24,6 +24,19 @@
 
 That might be more than is needed for individual components, but it is what I had installed when I wrote this and it worked.
 
+## XDK Download
+
+* https://www.microsoft.com/en-us/software-download/devcenter
+* Sign in
+* Select File Type: Xbox One
+* Press [Confirm] button
+* Select Build/version number: [10.0.17134.5076] - July 2018 Xbox One XDK  QFE 13
+* Press [Confirm] button
+* Press [Download Now] button
+* Unzip the file you download
+* Run XboxOneXDK.exe (if the filename has "tools" in it, you downloaded the wrong file)
+
+
 ## Powershell
 
 The ExecutionPolicy for LocalMachine and CurrentUser should be Unrestricted.  Run the following from an admin Powershell console.
