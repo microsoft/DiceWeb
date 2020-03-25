@@ -18,6 +18,8 @@ This project uses the XboxOne XDK to create an ERA (exclusive resource allocatio
 
 Building the EraPackage project will use the installed XDK to pack the [SystemInfo](../SystemInfo/README.md) project.
 
+Set the Platform to "Durango" before building.
+
 Tips:
 - **Always save your changes before building.** The PowerShell scripts will work with the content saved to disk and not what is viewed in the IDE.
 - **Use Rebuild** if you have made any changes to the settings in the SystemInfo project. Visual Studio may not recognize custom setting changes as requiring a new build.

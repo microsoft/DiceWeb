@@ -22,11 +22,15 @@
   * Windows 10 SDK (10.0.17763.0)
   * Windows 8.1 SDK
 
-That might be more than is needed for individual components, but it is what I had installed when I wrote this and it worked.
+That might be more than is needed for individual components, but it is what I had installed when I wrote this and it worked.  Do not uninstall options not in this list.
+
+## Windows 10 SDK, version 1903
+* Visit the [Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/)
+* Install Windows 10 SDK, version 1903 (10.0.18362.1)
 
 ## XDK Download
 
-* https://www.microsoft.com/en-us/software-download/devcenter
+* Visit [Xbox Developer Downloads](https://www.microsoft.com/en-us/software-download/devcenter)
 * Sign in
 * Select File Type: Xbox One
 * Press [Confirm] button

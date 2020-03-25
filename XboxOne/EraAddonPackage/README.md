@@ -24,6 +24,8 @@ This project uses the XboxOne XDK to create an package for a durable good Addon 
 
 Building the EraAddOnPackage project will use the installed XDK to pack a durable good.
 
+Set the Platform to "Durango" before building.
+
 Tips:
 - **Always save your changes before building.** The PowerShell scripts will work with the content saved to disk and not what is viewed in the IDE.
 
